@@ -1,0 +1,452 @@
+const SCENES = [
+ {
+  "id": 1,
+  "kurzname": "Waldschlacht",
+  "ort": "Kalkriese, Niedersachsen",
+  "lat": 52.403,
+  "lon": 8.123,
+  "jahr": 9,
+  "epoche": "Römerzeit"
+ },
+ {
+  "id": 2,
+  "kurzname": "Königshalle",
+  "ort": "Paderborn, Nordrhein-Westfalen",
+  "lat": 51.7189,
+  "lon": 8.7544,
+  "jahr": 799,
+  "epoche": "Frühmittelalter"
+ },
+ {
+  "id": 3,
+  "kurzname": "Pest",
+  "ort": "Lübeck, Schleswig-Holstein",
+  "lat": 53.8689,
+  "lon": 10.6873,
+  "jahr": 1350,
+  "epoche": "Spätmittelalter"
+ },
+ {
+  "id": 4,
+  "kurzname": "Pikenschlacht",
+  "ort": "Breitenfeld, Sachsen",
+  "lat": 51.416,
+  "lon": 12.47,
+  "jahr": 1631,
+  "epoche": "Dreißigjähriger Krieg"
+ },
+ {
+  "id": 5,
+  "kurzname": "Völkerschlacht",
+  "ort": "Leipzig, Sachsen",
+  "lat": 51.3,
+  "lon": 12.42,
+  "jahr": 1813,
+  "epoche": "Napoleonische Zeit"
+ },
+ {
+  "id": 6,
+  "kurzname": "Gießerei",
+  "ort": "Essen, Nordrhein-Westfalen",
+  "lat": 51.455,
+  "lon": 7.011,
+  "jahr": 1885,
+  "epoche": "Kaiserreich"
+ },
+ {
+  "id": 7,
+  "kurzname": "Tanzlokal",
+  "ort": "Berlin",
+  "lat": 52.5,
+  "lon": 13.38,
+  "jahr": 1929,
+  "epoche": "Weimarer Republik"
+ },
+ {
+  "id": 8,
+  "kurzname": "Grenzsperre",
+  "ort": "Berlin",
+  "lat": 52.535,
+  "lon": 13.39,
+  "jahr": 1961,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 9,
+  "kurzname": "Wohnzimmer",
+  "ort": "Bielefeld, Nordrhein-Westfalen",
+  "lat": 52.02,
+  "lon": 8.53,
+  "jahr": 1985,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 10,
+  "kurzname": "Impfzentrum",
+  "ort": "Hannover, Niedersachsen",
+  "lat": 52.32,
+  "lon": 9.81,
+  "jahr": 2021,
+  "epoche": "Gegenwart"
+ },
+ {
+  "id": 11,
+  "kurzname": "Langhaus innen",
+  "ort": "Küstenmarsch bei Bremerhaven, Niedersachsen",
+  "lat": 53.65,
+  "lon": 8.62,
+  "jahr": 100,
+  "epoche": "Germanenzeit"
+ },
+ {
+  "id": 12,
+  "kurzname": "Reiterschlacht",
+  "ort": "Lechfeld, Bayern",
+  "lat": 48.25,
+  "lon": 10.87,
+  "jahr": 955,
+  "epoche": "Frühmittelalter"
+ },
+ {
+  "id": 13,
+  "kurzname": "Kogge",
+  "ort": "Ostsee vor Rostock, Mecklenburg-Vorpommern",
+  "lat": 54.25,
+  "lon": 12.1,
+  "jahr": 1400,
+  "epoche": "Spätmittelalter"
+ },
+ {
+  "id": 14,
+  "kurzname": "Friedenssaal",
+  "ort": "Münster, Nordrhein-Westfalen",
+  "lat": 51.963,
+  "lon": 7.626,
+  "jahr": 1648,
+  "epoche": "Dreißigjähriger Krieg"
+ },
+ {
+  "id": 15,
+  "kurzname": "Volksfest am Burgberg",
+  "ort": "Neustadt an der Weinstraße, Rheinland-Pfalz",
+  "lat": 49.327,
+  "lon": 8.137,
+  "jahr": 1832,
+  "epoche": "Biedermeier"
+ },
+ {
+  "id": 16,
+  "kurzname": "Festzelt",
+  "ort": "München, Bayern",
+  "lat": 48.135,
+  "lon": 11.565,
+  "jahr": 1900,
+  "epoche": "Kaiserreich"
+ },
+ {
+  "id": 17,
+  "kurzname": "Luftschutzkeller",
+  "ort": "Hamburg",
+  "lat": 53.55,
+  "lon": 9.99,
+  "jahr": 1943,
+  "epoche": "Zweiter Weltkrieg"
+ },
+ {
+  "id": 18,
+  "kurzname": "Hörsaal",
+  "ort": "Frankfurt am Main, Hessen",
+  "lat": 50.13,
+  "lon": 8.67,
+  "jahr": 1968,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 19,
+  "kurzname": "Montagsdemo",
+  "ort": "Leipzig, Sachsen",
+  "lat": 51.34,
+  "lon": 12.38,
+  "jahr": 1989,
+  "epoche": "Wendezeit"
+ },
+ {
+  "id": 20,
+  "kurzname": "Weihnachtsmarkt",
+  "ort": "Aachen, Nordrhein-Westfalen",
+  "lat": 50.775,
+  "lon": 6.083,
+  "jahr": 2023,
+  "epoche": "Gegenwart"
+ },
+ {
+  "id": 21,
+  "kurzname": "Arena",
+  "ort": "Xanten, Nordrhein-Westfalen",
+  "lat": 51.66,
+  "lon": 6.45,
+  "jahr": 120,
+  "epoche": "Römerzeit"
+ },
+ {
+  "id": 22,
+  "kurzname": "Kirche innen",
+  "ort": "Speyer, Rheinland-Pfalz",
+  "lat": 49.317,
+  "lon": 8.444,
+  "jahr": 1150,
+  "epoche": "Hochmittelalter"
+ },
+ {
+  "id": 23,
+  "kurzname": "Druckerei",
+  "ort": "Mainz, Rheinland-Pfalz",
+  "lat": 50.0,
+  "lon": 8.27,
+  "jahr": 1455,
+  "epoche": "Renaissance"
+ },
+ {
+  "id": 24,
+  "kurzname": "Ballsaal",
+  "ort": "Ludwigsburg, Baden-Württemberg",
+  "lat": 48.897,
+  "lon": 9.192,
+  "jahr": 1725,
+  "epoche": "Barock"
+ },
+ {
+  "id": 25,
+  "kurzname": "Erste Eisenbahn",
+  "ort": "Nürnberg, Bayern",
+  "lat": 49.45,
+  "lon": 11.08,
+  "jahr": 1835,
+  "epoche": "Industrialisierung"
+ },
+ {
+  "id": 26,
+  "kurzname": "Luftschiff",
+  "ort": "Friedrichshafen, Baden-Württemberg",
+  "lat": 47.65,
+  "lon": 9.48,
+  "jahr": 1910,
+  "epoche": "Kaiserreich"
+ },
+ {
+  "id": 27,
+  "kurzname": "Gerichtssaal",
+  "ort": "Nürnberg, Bayern",
+  "lat": 49.446,
+  "lon": 11.051,
+  "jahr": 1946,
+  "epoche": "Nachkriegszeit"
+ },
+ {
+  "id": 28,
+  "kurzname": "Autofreier Sonntag",
+  "ort": "Autobahn bei Leverkusen, Nordrhein-Westfalen",
+  "lat": 51.05,
+  "lon": 7.0,
+  "jahr": 1973,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 29,
+  "kurzname": "Technoclub",
+  "ort": "Frankfurt am Main, Hessen",
+  "lat": 50.11,
+  "lon": 8.68,
+  "jahr": 1996,
+  "epoche": "Nachwendezeit"
+ },
+ {
+  "id": 30,
+  "kurzname": "ICE innen",
+  "ort": "Westerwald, Rheinland-Pfalz",
+  "lat": 50.55,
+  "lon": 7.75,
+  "jahr": 2024,
+  "epoche": "Gegenwart"
+ },
+ {
+  "id": 31,
+  "kurzname": "Badehaus",
+  "ort": "Trier, Rheinland-Pfalz",
+  "lat": 49.75,
+  "lon": 6.64,
+  "jahr": 250,
+  "epoche": "Römerzeit"
+ },
+ {
+  "id": 32,
+  "kurzname": "Ritterturnier",
+  "ort": "Eisenach, Thüringen",
+  "lat": 50.975,
+  "lon": 10.32,
+  "jahr": 1220,
+  "epoche": "Hochmittelalter"
+ },
+ {
+  "id": 33,
+  "kurzname": "Bauernschlacht",
+  "ort": "Bad Frankenhausen, Thüringen",
+  "lat": 51.36,
+  "lon": 11.1,
+  "jahr": 1525,
+  "epoche": "Renaissance"
+ },
+ {
+  "id": 34,
+  "kurzname": "Reiterangriff",
+  "ort": "Roßbach, Sachsen-Anhalt",
+  "lat": 51.238,
+  "lon": 11.96,
+  "jahr": 1757,
+  "epoche": "Aufklärung"
+ },
+ {
+  "id": 35,
+  "kurzname": "Barrikade",
+  "ort": "Berlin",
+  "lat": 52.52,
+  "lon": 13.405,
+  "jahr": 1848,
+  "epoche": "Revolution 1848"
+ },
+ {
+  "id": 36,
+  "kurzname": "Matrosenaufstand",
+  "ort": "Kiel, Schleswig-Holstein",
+  "lat": 54.32,
+  "lon": 10.14,
+  "jahr": 1918,
+  "epoche": "Novemberrevolution"
+ },
+ {
+  "id": 37,
+  "kurzname": "Luftbrücke",
+  "ort": "Berlin",
+  "lat": 52.47,
+  "lon": 13.4,
+  "jahr": 1948,
+  "epoche": "Nachkriegszeit"
+ },
+ {
+  "id": 38,
+  "kurzname": "Werfthalle",
+  "ort": "Rostock, Mecklenburg-Vorpommern",
+  "lat": 54.15,
+  "lon": 12.1,
+  "jahr": 1978,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 39,
+  "kurzname": "Hochwasser",
+  "ort": "Dresden, Sachsen",
+  "lat": 51.05,
+  "lon": 13.74,
+  "jahr": 2002,
+  "epoche": "Gegenwart"
+ },
+ {
+  "id": 40,
+  "kurzname": "Stadion",
+  "ort": "Hamburg",
+  "lat": 53.587,
+  "lon": 9.898,
+  "jahr": 2025,
+  "epoche": "Gegenwart"
+ },
+ {
+  "id": 41,
+  "kurzname": "Eisüberquerung",
+  "ort": "Mainz, Rheinland-Pfalz",
+  "lat": 50.0,
+  "lon": 8.27,
+  "jahr": 406,
+  "epoche": "Völkerwanderung"
+ },
+ {
+  "id": 42,
+  "kurzname": "Schmiede innen",
+  "ort": "Goslar, Niedersachsen",
+  "lat": 51.906,
+  "lon": 10.43,
+  "jahr": 1330,
+  "epoche": "Spätmittelalter"
+ },
+ {
+  "id": 43,
+  "kurzname": "Bergwerk",
+  "ort": "Freiberg, Sachsen",
+  "lat": 50.916,
+  "lon": 13.342,
+  "jahr": 1560,
+  "epoche": "Renaissance"
+ },
+ {
+  "id": 44,
+  "kurzname": "Salon",
+  "ort": "Weimar, Thüringen",
+  "lat": 50.98,
+  "lon": 11.33,
+  "jahr": 1780,
+  "epoche": "Aufklärung"
+ },
+ {
+  "id": 45,
+  "kurzname": "Auswandererschiff",
+  "ort": "Bremerhaven, Bremen",
+  "lat": 53.55,
+  "lon": 8.58,
+  "jahr": 1860,
+  "epoche": "Industrialisierung"
+ },
+ {
+  "id": 46,
+  "kurzname": "Inflation",
+  "ort": "Köln, Nordrhein-Westfalen",
+  "lat": 50.938,
+  "lon": 6.96,
+  "jahr": 1923,
+  "epoche": "Weimarer Republik"
+ },
+ {
+  "id": 47,
+  "kurzname": "Kneipe mit Fernseher",
+  "ort": "Gelsenkirchen, Nordrhein-Westfalen",
+  "lat": 51.517,
+  "lon": 7.1,
+  "jahr": 1954,
+  "epoche": "Wirtschaftswunder"
+ },
+ {
+  "id": 48,
+  "kurzname": "Klassenzimmer",
+  "ort": "Erfurt, Thüringen",
+  "lat": 50.978,
+  "lon": 11.032,
+  "jahr": 1982,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 49,
+  "kurzname": "Public Viewing",
+  "ort": "Stuttgart, Baden-Württemberg",
+  "lat": 48.775,
+  "lon": 9.175,
+  "jahr": 2006,
+  "epoche": "Gegenwart"
+ },
+ {
+  "id": 50,
+  "kurzname": "Kuhstall",
+  "ort": "Oberbayern, Bayern",
+  "lat": 47.8,
+  "lon": 11.6,
+  "jahr": 2025,
+  "epoche": "Gegenwart"
+ }
+];

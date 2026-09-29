@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><title>Wen Ware Deutschland</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lib/leaflet.css"><link rel="stylesheet" href="style.css"></head><body>
+<header>
+  <b>Wen Ware Deutschland</b>
+  <span id="music" title="Musik"><button id="mbtn" type="button">♪</button><input type="range" id="vol" min="0" max="100" value="10" aria-label="Lautstärke"></span>
+  <span id="timer">1:00</span><span id="round"></span><span id="total"></span>
+</header>
+<main>
+  <canvas id="view"></canvas>
+  <div id="hint">Ziehen zum Umsehen · Mausrad zum Zoomen</div>
+  <div id="credit"></div>
+  <section id="panel">
+    <div id="map"></div>
+    <div id="yearbox">
+      <div class="yrow"><span>Jahr</span><input type="number" id="yn" min="0" max="2026" value="1900"></div>
+      <input type="range" id="year" min="0" max="2026" step="1" value="1900" aria-label="Jahr">
+      <div id="scale"></div>
+    </div>
+    <button id="submit" disabled>Ort auf der Karte wählen</button>
+    <div id="result" hidden></div>
+    <button id="next" hidden>Weiter</button>
+  </section>
+</main>
+<div id="overlay">
+  <div id="start">
+    <h1>Wen Ware Deutschland</h1>
+    <p>Erkunde eine 360°-Szene, rate und markiere, wann und wo der Moment geschah.</p>
+    <button id="goPano" type="button">Spiel starten</button>
+    <p class="note">Alle Bilder sind KI-generiert und historisch nicht in jedem Detail exakt.</p>
+    <p class="note small">Kartendaten: Natural Earth (gemeinfrei) · Karte: Leaflet · Musik: eigene Komposition</p>
+  </div>
+  <p id="msg" hidden></p>
+</div>
+<script src="lib/leaflet.js"></script><script src="geo.js"></script><script src="scenes.js"></script><script src="game.js"></script></body></html>
