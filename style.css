@@ -45,7 +45,10 @@ header #total{margin-left:14px}
 
 .insp{font-size:13px;color:#bbb;margin:4px 0 14px}.insp a{color:#e8c77a}
 
-#ptoggle{display:none}
+#ptoggle{display:block;padding:8px;cursor:pointer}
+#panel.min>:not(#ptoggle){display:none}
+#panel.min,#panel.min:hover{width:auto;background:none;border:0;padding:0}
+#panel.min #ptoggle{box-shadow:0 2px 8px #000a}
 @media (max-width:700px){
   header{gap:10px;padding:6px 10px;font-size:13px}
   header>b{display:none}
@@ -60,7 +63,7 @@ header #total{margin-left:14px}
   #panel.big:hover #map{height:min(42vh,340px)}
   #panel #map{height:32vh}
   #panel.big #map{height:min(42vh,340px)}
-  #ptoggle{display:block;padding:10px;position:sticky;top:0;z-index:5;touch-action:manipulation;cursor:pointer;-webkit-tap-highlight-color:transparent}
+  #ptoggle{padding:10px;position:sticky;top:0;z-index:5;touch-action:manipulation;cursor:pointer;-webkit-tap-highlight-color:transparent}
   #panel.min>:not(#ptoggle){display:none}
   #panel.min,#panel.min:hover{left:auto;right:8px;width:auto;background:none;border:0;padding:0;overflow:visible}
   #panel.min #ptoggle{box-shadow:0 2px 8px #000a;background:#c8892b;color:#111}
