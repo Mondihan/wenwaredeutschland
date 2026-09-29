@@ -1,7 +1,7 @@
 const SCENES = [
  {
   "id": 1,
-  "kurzname": "Waldschlacht",
+  "kurzname": "Varusschlacht",
   "ort": "Kalkriese, Niedersachsen",
   "lat": 52.403,
   "lon": 8.123,
@@ -10,7 +10,7 @@ const SCENES = [
  },
  {
   "id": 2,
-  "kurzname": "Königshalle",
+  "kurzname": "Paderborner Treffen: Karl der Große und Papst Leo III.",
   "ort": "Paderborn, Nordrhein-Westfalen",
   "lat": 51.7189,
   "lon": 8.7544,
@@ -19,7 +19,7 @@ const SCENES = [
  },
  {
   "id": 3,
-  "kurzname": "Pest",
+  "kurzname": "Der Schwarze Tod (Pest)",
   "ort": "Lübeck, Schleswig-Holstein",
   "lat": 53.8689,
   "lon": 10.6873,
@@ -28,7 +28,7 @@ const SCENES = [
  },
  {
   "id": 4,
-  "kurzname": "Pikenschlacht",
+  "kurzname": "Schlacht bei Breitenfeld",
   "ort": "Breitenfeld, Sachsen",
   "lat": 51.416,
   "lon": 12.47,
@@ -37,7 +37,7 @@ const SCENES = [
  },
  {
   "id": 5,
-  "kurzname": "Völkerschlacht",
+  "kurzname": "Völkerschlacht bei Leipzig",
   "ort": "Leipzig, Sachsen",
   "lat": 51.3,
   "lon": 12.42,
@@ -46,7 +46,7 @@ const SCENES = [
  },
  {
   "id": 6,
-  "kurzname": "Gießerei",
+  "kurzname": "Krupp-Gussstahlfabrik",
   "ort": "Essen, Nordrhein-Westfalen",
   "lat": 51.455,
   "lon": 7.011,
@@ -55,7 +55,7 @@ const SCENES = [
  },
  {
   "id": 7,
-  "kurzname": "Tanzlokal",
+  "kurzname": "Goldene Zwanziger: Tanzlokal",
   "ort": "Berlin",
   "lat": 52.5,
   "lon": 13.38,
@@ -64,7 +64,7 @@ const SCENES = [
  },
  {
   "id": 8,
-  "kurzname": "Grenzsperre",
+  "kurzname": "Bau der Berliner Mauer",
   "ort": "Berlin",
   "lat": 52.535,
   "lon": 13.39,
@@ -73,7 +73,7 @@ const SCENES = [
  },
  {
   "id": 9,
-  "kurzname": "Wohnzimmer",
+  "kurzname": "Fernsehabend im Wohnzimmer",
   "ort": "Bielefeld, Nordrhein-Westfalen",
   "lat": 52.02,
   "lon": 8.53,
@@ -82,7 +82,7 @@ const SCENES = [
  },
  {
   "id": 10,
-  "kurzname": "Impfzentrum",
+  "kurzname": "Corona-Impfkampagne",
   "ort": "Hannover, Niedersachsen",
   "lat": 52.32,
   "lon": 9.81,
@@ -91,7 +91,7 @@ const SCENES = [
  },
  {
   "id": 11,
-  "kurzname": "Langhaus innen",
+  "kurzname": "Germanisches Langhaus (Feddersen Wierde)",
   "ort": "Küstenmarsch bei Bremerhaven, Niedersachsen",
   "lat": 53.65,
   "lon": 8.62,
@@ -100,7 +100,7 @@ const SCENES = [
  },
  {
   "id": 12,
-  "kurzname": "Reiterschlacht",
+  "kurzname": "Schlacht auf dem Lechfeld",
   "ort": "Lechfeld, Bayern",
   "lat": 48.25,
   "lon": 10.87,
@@ -109,7 +109,7 @@ const SCENES = [
  },
  {
   "id": 13,
-  "kurzname": "Kogge",
+  "kurzname": "Hansehandel: Kogge auf der Ostsee",
   "ort": "Ostsee vor Rostock, Mecklenburg-Vorpommern",
   "lat": 54.25,
   "lon": 12.1,
@@ -118,7 +118,7 @@ const SCENES = [
  },
  {
   "id": 14,
-  "kurzname": "Friedenssaal",
+  "kurzname": "Westfälischer Friede",
   "ort": "Münster, Nordrhein-Westfalen",
   "lat": 51.963,
   "lon": 7.626,
@@ -127,7 +127,7 @@ const SCENES = [
  },
  {
   "id": 15,
-  "kurzname": "Volksfest am Burgberg",
+  "kurzname": "Hambacher Fest",
   "ort": "Neustadt an der Weinstraße, Rheinland-Pfalz",
   "lat": 49.327,
   "lon": 8.137,
@@ -136,7 +136,7 @@ const SCENES = [
  },
  {
   "id": 16,
-  "kurzname": "Festzelt",
+  "kurzname": "Oktoberfest",
   "ort": "München, Bayern",
   "lat": 48.135,
   "lon": 11.565,
@@ -145,7 +145,7 @@ const SCENES = [
  },
  {
   "id": 17,
-  "kurzname": "Luftschutzkeller",
+  "kurzname": "Luftangriffe auf Hamburg (Operation Gomorrha)",
   "ort": "Hamburg",
   "lat": 53.55,
   "lon": 9.99,
@@ -154,7 +154,7 @@ const SCENES = [
  },
  {
   "id": 19,
-  "kurzname": "Montagsdemo",
+  "kurzname": "Montagsdemonstration Leipzig",
   "ort": "Leipzig, Sachsen",
   "lat": 51.34,
   "lon": 12.38,
@@ -172,7 +172,7 @@ const SCENES = [
  },
  {
   "id": 21,
-  "kurzname": "Arena",
+  "kurzname": "Gladiatorenspiele in Colonia Ulpia Traiana",
   "ort": "Xanten, Nordrhein-Westfalen",
   "lat": 51.66,
   "lon": 6.45,
@@ -181,7 +181,7 @@ const SCENES = [
  },
  {
   "id": 22,
-  "kurzname": "Kirche innen",
+  "kurzname": "Kaiserdom zu Speyer",
   "ort": "Speyer, Rheinland-Pfalz",
   "lat": 49.317,
   "lon": 8.444,
@@ -190,7 +190,7 @@ const SCENES = [
  },
  {
   "id": 23,
-  "kurzname": "Druckerei",
+  "kurzname": "Gutenbergs Druckerei",
   "ort": "Mainz, Rheinland-Pfalz",
   "lat": 50.0,
   "lon": 8.27,
@@ -199,7 +199,7 @@ const SCENES = [
  },
  {
   "id": 24,
-  "kurzname": "Ballsaal",
+  "kurzname": "Hofball im Barock",
   "ort": "Ludwigsburg, Baden-Württemberg",
   "lat": 48.897,
   "lon": 9.192,
@@ -208,7 +208,7 @@ const SCENES = [
  },
  {
   "id": 25,
-  "kurzname": "Erste Eisenbahn",
+  "kurzname": "Erste deutsche Eisenbahn (Adler)",
   "ort": "Nürnberg, Bayern",
   "lat": 49.45,
   "lon": 11.08,
@@ -217,7 +217,7 @@ const SCENES = [
  },
  {
   "id": 26,
-  "kurzname": "Luftschiff",
+  "kurzname": "Zeppelin-Luftschiff über dem Bodensee",
   "ort": "Friedrichshafen, Baden-Württemberg",
   "lat": 47.65,
   "lon": 9.48,
@@ -226,7 +226,7 @@ const SCENES = [
  },
  {
   "id": 27,
-  "kurzname": "Gerichtssaal",
+  "kurzname": "Nürnberger Prozesse",
   "ort": "Nürnberg, Bayern",
   "lat": 49.446,
   "lon": 11.051,
@@ -235,7 +235,7 @@ const SCENES = [
  },
  {
   "id": 28,
-  "kurzname": "Autofreier Sonntag",
+  "kurzname": "Autofreie Sonntage (Ölkrise)",
   "ort": "Autobahn bei Leverkusen, Nordrhein-Westfalen",
   "lat": 51.05,
   "lon": 7.0,
@@ -244,7 +244,7 @@ const SCENES = [
  },
  {
   "id": 29,
-  "kurzname": "Technoclub",
+  "kurzname": "Techno-Boom",
   "ort": "Frankfurt am Main, Hessen",
   "lat": 50.11,
   "lon": 8.68,
@@ -253,7 +253,7 @@ const SCENES = [
  },
  {
   "id": 30,
-  "kurzname": "ICE innen",
+  "kurzname": "ICE-Schnellfahrstrecke Köln–Rhein/Main",
   "ort": "Westerwald, Rheinland-Pfalz",
   "lat": 50.55,
   "lon": 7.75,
@@ -262,7 +262,7 @@ const SCENES = [
  },
  {
   "id": 31,
-  "kurzname": "Badehaus",
+  "kurzname": "Römische Thermen in Augusta Treverorum",
   "ort": "Trier, Rheinland-Pfalz",
   "lat": 49.75,
   "lon": 6.64,
@@ -271,7 +271,7 @@ const SCENES = [
  },
  {
   "id": 32,
-  "kurzname": "Ritterturnier",
+  "kurzname": "Ritterturnier unter der Wartburg",
   "ort": "Eisenach, Thüringen",
   "lat": 50.975,
   "lon": 10.32,
@@ -280,7 +280,7 @@ const SCENES = [
  },
  {
   "id": 33,
-  "kurzname": "Bauernschlacht",
+  "kurzname": "Schlacht bei Frankenhausen (Bauernkrieg)",
   "ort": "Bad Frankenhausen, Thüringen",
   "lat": 51.36,
   "lon": 11.1,
@@ -289,7 +289,7 @@ const SCENES = [
  },
  {
   "id": 34,
-  "kurzname": "Reiterangriff",
+  "kurzname": "Schlacht bei Roßbach",
   "ort": "Roßbach, Sachsen-Anhalt",
   "lat": 51.238,
   "lon": 11.96,
@@ -298,7 +298,7 @@ const SCENES = [
  },
  {
   "id": 35,
-  "kurzname": "Barrikade",
+  "kurzname": "Märzrevolution: Barrikaden in Berlin",
   "ort": "Berlin",
   "lat": 52.52,
   "lon": 13.405,
@@ -307,7 +307,7 @@ const SCENES = [
  },
  {
   "id": 36,
-  "kurzname": "Matrosenaufstand",
+  "kurzname": "Kieler Matrosenaufstand",
   "ort": "Kiel, Schleswig-Holstein",
   "lat": 54.32,
   "lon": 10.14,
@@ -316,7 +316,7 @@ const SCENES = [
  },
  {
   "id": 37,
-  "kurzname": "Luftbrücke",
+  "kurzname": "Berliner Luftbrücke",
   "ort": "Berlin",
   "lat": 52.47,
   "lon": 13.4,
@@ -325,7 +325,7 @@ const SCENES = [
  },
  {
   "id": 38,
-  "kurzname": "Werfthalle",
+  "kurzname": "Schiffbau in der DDR (Neptun Werft)",
   "ort": "Rostock, Mecklenburg-Vorpommern",
   "lat": 54.15,
   "lon": 12.1,
@@ -334,7 +334,7 @@ const SCENES = [
  },
  {
   "id": 39,
-  "kurzname": "Hochwasser",
+  "kurzname": "Elbe-Hochwasser",
   "ort": "Dresden, Sachsen",
   "lat": 51.05,
   "lon": 13.74,
@@ -343,7 +343,7 @@ const SCENES = [
  },
  {
   "id": 40,
-  "kurzname": "Stadion",
+  "kurzname": "Bundesliga-Spiel im Volksparkstadion",
   "ort": "Hamburg",
   "lat": 53.587,
   "lon": 9.898,
@@ -352,7 +352,7 @@ const SCENES = [
  },
  {
   "id": 41,
-  "kurzname": "Eisüberquerung",
+  "kurzname": "Rheinüberquerung der Vandalen, Sueben und Alanen",
   "ort": "Mainz, Rheinland-Pfalz",
   "lat": 50.0,
   "lon": 8.27,
@@ -361,7 +361,7 @@ const SCENES = [
  },
  {
   "id": 42,
-  "kurzname": "Schmiede innen",
+  "kurzname": "Schmiede in der Reichsstadt Goslar",
   "ort": "Goslar, Niedersachsen",
   "lat": 51.906,
   "lon": 10.43,
@@ -370,7 +370,7 @@ const SCENES = [
  },
  {
   "id": 43,
-  "kurzname": "Bergwerk",
+  "kurzname": "Freiberger Silberbergbau",
   "ort": "Freiberg, Sachsen",
   "lat": 50.916,
   "lon": 13.342,
@@ -379,7 +379,7 @@ const SCENES = [
  },
  {
   "id": 44,
-  "kurzname": "Salon",
+  "kurzname": "Weimarer Klassik: Salon",
   "ort": "Weimar, Thüringen",
   "lat": 50.98,
   "lon": 11.33,
@@ -388,7 +388,7 @@ const SCENES = [
  },
  {
   "id": 45,
-  "kurzname": "Auswandererschiff",
+  "kurzname": "Massenauswanderung nach Amerika",
   "ort": "Bremerhaven, Bremen",
   "lat": 53.55,
   "lon": 8.58,
@@ -397,7 +397,7 @@ const SCENES = [
  },
  {
   "id": 46,
-  "kurzname": "Inflation",
+  "kurzname": "Hyperinflation",
   "ort": "Köln, Nordrhein-Westfalen",
   "lat": 50.938,
   "lon": 6.96,
@@ -406,7 +406,7 @@ const SCENES = [
  },
  {
   "id": 47,
-  "kurzname": "Kneipe mit Fernseher",
+  "kurzname": "Wunder von Bern (WM-Finale 1954)",
   "ort": "Gelsenkirchen, Nordrhein-Westfalen",
   "lat": 51.517,
   "lon": 7.1,
@@ -415,7 +415,7 @@ const SCENES = [
  },
  {
   "id": 48,
-  "kurzname": "Klassenzimmer",
+  "kurzname": "Schulalltag in der DDR (Thälmann-Pioniere)",
   "ort": "Erfurt, Thüringen",
   "lat": 50.978,
   "lon": 11.032,
@@ -424,7 +424,7 @@ const SCENES = [
  },
  {
   "id": 49,
-  "kurzname": "Public Viewing",
+  "kurzname": "Fußball-WM 2006: Sommermärchen",
   "ort": "Stuttgart, Baden-Württemberg",
   "lat": 48.775,
   "lon": 9.175,
@@ -433,7 +433,7 @@ const SCENES = [
  },
  {
   "id": 50,
-  "kurzname": "Kuhstall",
+  "kurzname": "Moderne Milchviehhaltung (Melkroboter)",
   "ort": "Oberbayern, Bayern",
   "lat": 47.8,
   "lon": 11.6,
