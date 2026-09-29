@@ -33,6 +33,14 @@ fitDE();
 L.geoJSON(GEO_NB, { interactive: false, style: { color: "#aaa", weight: 1, fillColor: "#dcd8cb", fillOpacity: 1 } }).addTo(map);
 L.geoJSON(GEO_DE, { interactive: false, style: { color: "#444", weight: 2, fillColor: "#f7f3e3", fillOpacity: 1 } }).addTo(map);
 const panel = $("panel");
+const mobile = window.matchMedia("(max-width:700px)");
+function setMin(m) {
+  panel.classList.toggle("min", m);
+  $("ptoggle").textContent = m ? "\u25B2 Karte & Jahr \u00F6ffnen" : "\u25BC Karte einklappen";
+  if (!m) setTimeout(() => { map.invalidateSize(); if (!guess && !done) fitDE(); }, 50);
+}
+$("ptoggle").onclick = () => setMin(!panel.classList.contains("min"));
+setMin(false);
 panel.addEventListener("transitionend", e => { if (e.propertyName === "width" || e.propertyName === "height") { map.invalidateSize(); if (!guess && !done) fitDE(); } });
 const dot = (ll, color) => L.circleMarker(ll, { radius: 4, weight: 2, color, fillOpacity: .9 }).addTo(map);
 map.on("click", e => {
@@ -121,7 +129,7 @@ const getPano = s => cache[s.id] || (cache[s.id] = loadImg(`panos/szene-${String
 async function showRound() {
   const s = scenes[idx]; done = false; guess = null; active = false;
   layers.forEach(l => l.remove()); layers = [];
-  panel.classList.remove("big"); fitDE(); setTimeout(() => { map.invalidateSize(); fitDE(); }, 250);
+  panel.classList.remove("big"); setMin(mobile.matches); fitDE(); setTimeout(() => { map.invalidateSize(); fitDE(); }, 250);
   $("result").hidden = $("next").hidden = true; $("submit").hidden = false; $("submit").disabled = true; $("submit").textContent = "Ort auf der Karte wählen";
   $("credit").innerHTML = ""; setYear(1900); yearTouched = false; stopTimer(); $("timer").textContent = fmt(TIME); $("timer").classList.remove("low");
   $("round").textContent = `Runde ${idx + 1}/${scenes.length}`; $("total").textContent = `Punkte: ${total}`;
@@ -159,7 +167,7 @@ function doSubmit(timeUp) {
   const pl = guess ? Math.round(5000 * Math.exp(-km / 300)) : 0, py = hasY ? Math.round(5000 * Math.exp(-dy / tolerance(s.jahr))) : 0;
   total += pl + py; done = true; active = false;
   history.push({ s, pts: pl + py });
-  panel.classList.add("big");
+  panel.classList.add("big"); setMin(false);
   layers.push(dot([s.lat, s.lon], "#3c3"));
   if (guess) layers.push(L.polyline([guess, [s.lat, s.lon]], { color: "#fff", dashArray: "6", weight: 2 }).addTo(map));
   setTimeout(() => { map.invalidateSize(); if (guess) map.fitBounds(L.latLngBounds([guess, [s.lat, s.lon]]).pad(.5), { maxZoom: 7 }); else map.setView([s.lat, s.lon], 6); }, 230);
