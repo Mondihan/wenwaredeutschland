@@ -153,15 +153,6 @@ const SCENES = [
   "epoche": "Zweiter Weltkrieg"
  },
  {
-  "id": 18,
-  "kurzname": "Hörsaal",
-  "ort": "Frankfurt am Main, Hessen",
-  "lat": 50.13,
-  "lon": 8.67,
-  "jahr": 1968,
-  "epoche": "Geteiltes Deutschland"
- },
- {
   "id": 19,
   "kurzname": "Montagsdemo",
   "ort": "Leipzig, Sachsen",
