@@ -36,7 +36,7 @@ const panel = $("panel");
 const mobile = window.matchMedia("(max-width:700px)");
 function setMin(m) {
   panel.classList.toggle("min", m);
-  $("ptoggle").textContent = m ? "\u25B2 Karte & Jahr \u00F6ffnen" : "\u25BC Karte einklappen";
+  $("ptoggle").textContent = m ? "\u25B2 Karte \u00F6ffnen" : "\u25BC Karte einklappen";
   if (!m) setTimeout(() => { map.invalidateSize(); if (!guess && !done) fitDE(); }, 50);
 }
 $("ptoggle").onclick = () => setMin(!panel.classList.contains("min"));

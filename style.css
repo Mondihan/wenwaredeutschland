@@ -11,8 +11,9 @@ main{flex:1;position:relative;min-height:0}
 #credit:empty{display:none}#credit a{color:#8cf}
 #panel{position:absolute;right:16px;bottom:16px;width:340px;background:#1b1a17ee;border:1px solid #444;border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:8px;transition:width .18s;z-index:4}
 #panel #map{height:210px;border-radius:8px;transition:height .18s;background:#b9d3e4}
-#panel:hover,#panel.big{width:min(680px,calc(100vw - 32px))}
-#panel:hover #map,#panel.big #map{height:min(420px,calc(100vh - 330px))}
+#panel.big{width:min(680px,calc(100vw - 32px))}
+#panel.big #map{height:min(420px,calc(100vh - 330px))}
+@media (hover:hover){#panel:hover{width:min(680px,calc(100vw - 32px))}#panel:hover #map{height:min(420px,calc(100vh - 330px))}}
 .yrow{display:flex;justify-content:space-between;align-items:center}
 #yn{width:84px;background:#000;color:#fff;border:1px solid #555;border-radius:4px;padding:3px 6px;font-size:16px;text-align:right}
 input[type=range]{width:100%}
@@ -54,9 +55,13 @@ header #total{margin-left:14px}
   #hint{display:none}
   #credit{max-width:70%}
   #panel{left:8px;right:8px;bottom:8px;width:auto;max-height:calc(100% - 16px);overflow:auto}
-  #panel:hover,#panel.big{width:auto}
-  #panel #map,#panel:hover #map{height:32vh}
+  #panel,#panel.big,#panel:hover{width:auto}
+  #panel:hover #map{height:32vh}
+  #panel.big:hover #map{height:min(42vh,340px)}
+  #panel #map{height:32vh}
   #panel.big #map{height:min(42vh,340px)}
-  #ptoggle{display:block;padding:8px}
+  #ptoggle{display:block;padding:10px;position:sticky;top:0;z-index:5;touch-action:manipulation;cursor:pointer;-webkit-tap-highlight-color:transparent}
   #panel.min>:not(#ptoggle){display:none}
+  #panel.min,#panel.min:hover{left:auto;right:8px;width:auto;background:none;border:0;padding:0;overflow:visible}
+  #panel.min #ptoggle{box-shadow:0 2px 8px #000a;background:#c8892b;color:#111}
 }
