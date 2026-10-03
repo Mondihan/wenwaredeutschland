@@ -439,5 +439,95 @@ const SCENES = [
   "lon": 11.6,
   "jahr": 2025,
   "epoche": "Gegenwart"
+ },
+ {
+  "id": 51,
+  "kurzname": "Römische Grenzsoldaten am Limes",
+  "ort": "Saalburg, Hessen",
+  "lat": 50.2717,
+  "lon": 8.5683,
+  "jahr": 150,
+  "epoche": "Römerzeit"
+ },
+ {
+  "id": 52,
+  "kurzname": "Krönung Ottos des Großen",
+  "ort": "Aachen, Nordrhein-Westfalen",
+  "lat": 50.7753,
+  "lon": 6.0839,
+  "jahr": 936,
+  "epoche": "Ottonenzeit"
+ },
+ {
+  "id": 53,
+  "kurzname": "Stadterhebung Düsseldorf",
+  "ort": "Düsseldorf, Nordrhein-Westfalen",
+  "lat": 51.2277,
+  "lon": 6.7735,
+  "jahr": 1288,
+  "epoche": "Hochmittelalter"
+ },
+ {
+  "id": 54,
+  "kurzname": "Luther auf dem Reichstag zu Worms",
+  "ort": "Worms, Rheinland-Pfalz",
+  "lat": 49.6341,
+  "lon": 8.3597,
+  "jahr": 1521,
+  "epoche": "Reformation"
+ },
+ {
+  "id": 55,
+  "kurzname": "Erfindung des Meißner Porzellans",
+  "ort": "Meißen, Sachsen",
+  "lat": 51.1637,
+  "lon": 13.4737,
+  "jahr": 1710,
+  "epoche": "Barock"
+ },
+ {
+  "id": 56,
+  "kurzname": "Bertha Benz' erste Fernfahrt",
+  "ort": "Wiesloch, Baden-Württemberg",
+  "lat": 49.2939,
+  "lon": 8.6989,
+  "jahr": 1888,
+  "epoche": "Kaiserreich"
+ },
+ {
+  "id": 57,
+  "kurzname": "Millionster VW Käfer",
+  "ort": "Wolfsburg, Niedersachsen",
+  "lat": 52.4227,
+  "lon": 10.7865,
+  "jahr": 1955,
+  "epoche": "Wirtschaftswunder"
+ },
+ {
+  "id": 58,
+  "kurzname": "Olympische Spiele 1972",
+  "ort": "München, Bayern",
+  "lat": 48.1745,
+  "lon": 11.5465,
+  "jahr": 1972,
+  "epoche": "Geteiltes Deutschland"
+ },
+ {
+  "id": 59,
+  "kurzname": "Mauerfall an der Bornholmer Straße",
+  "ort": "Berlin",
+  "lat": 52.5546,
+  "lon": 13.3965,
+  "jahr": 1989,
+  "epoche": "Wendezeit"
+ },
+ {
+  "id": 60,
+  "kurzname": "Willkommenskultur am Hauptbahnhof",
+  "ort": "München, Bayern",
+  "lat": 48.1402,
+  "lon": 11.5586,
+  "jahr": 2015,
+  "epoche": "Gegenwart"
  }
 ];

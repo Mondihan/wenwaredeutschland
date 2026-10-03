@@ -68,3 +68,5 @@ header #total{margin-left:14px}
   #panel.min,#panel.min:hover{left:auto;right:8px;width:auto;background:none;border:0;padding:0;overflow:visible}
   #panel.min #ptoggle{box-shadow:0 2px 8px #000a;background:#c8892b;color:#111}
 }
+
+#start[hidden],#end[hidden],#msg[hidden]{display:none}
