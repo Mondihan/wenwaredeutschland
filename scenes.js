@@ -415,7 +415,7 @@ const SCENES = [
  },
  {
   "id": 48,
-  "kurzname": "Schulalltag in der DDR (Thälmann-Pioniere)",
+  "kurzname": "Schulalltag in der DDR (Pionierorganisation)",
   "ort": "Erfurt, Thüringen",
   "lat": 50.978,
   "lon": 11.032,
