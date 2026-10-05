@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><title>Wen Ware Deutschland</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="lib/leaflet.css"><link rel="stylesheet" href="style.css?v=4"></head><body>
+<link rel="stylesheet" href="lib/leaflet.css"><link rel="stylesheet" href="style.css?v=5"></head><body>
 <header>
   <b>Wen Ware Deutschland</b>
   <span id="music" title="Musik"><button id="mbtn" type="button">♪</button><input type="range" id="vol" min="0" max="100" value="10" aria-label="Lautstärke"></span>
@@ -14,7 +14,7 @@
     <button id="ptoggle" type="button" class="alt"></button>
     <div id="map"></div>
     <div id="yearbox">
-      <div class="yrow"><span>Jahr</span><input type="number" id="yn" min="0" max="2026" value="1900"></div>
+      <div class="yrow"><span class="ylab">Jahr</span><span class="ystep"><button id="ym" type="button" class="alt" aria-label="Ein Jahr zurück">−</button><input type="number" id="yn" min="0" max="2026" value="1900"><button id="yp" type="button" class="alt" aria-label="Ein Jahr vor">+</button></span></div>
       <input type="range" id="year" min="0" max="2026" step="1" value="1900" aria-label="Jahr">
       <div id="scale"></div>
     </div>
@@ -34,4 +34,4 @@
   </div>
   <p id="msg" hidden></p>
 </div>
-<script src="lib/leaflet.js"></script><script src="geo.js"></script><script src="scenes.js?v=4"></script><script src="game.js?v=4"></script></body></html>
+<script src="lib/leaflet.js"></script><script src="geo.js"></script><script src="scenes.js?v=5"></script><script src="game.js?v=5"></script></body></html>

@@ -25,6 +25,15 @@ let yearTouched = false;
 yearSlider.oninput = () => { yearTouched = true; setYear(+yearSlider.value); };
 yearNum.oninput = () => { if (yearNum.value !== "") { yearTouched = true; setYear(+yearNum.value); } };
 setYear(1900);
+function stepBtn(id, delta) {
+  const b = $(id); let t1 = null, t2 = null;
+  const go = () => { yearTouched = true; setYear(curYear + delta); };
+  const stop = () => { clearTimeout(t1); clearInterval(t2); t1 = t2 = null; };
+  b.addEventListener("pointerdown", e => { e.preventDefault(); go(); t1 = setTimeout(() => { t2 = setInterval(go, 60); }, 400); });
+  ["pointerup", "pointerleave", "pointercancel"].forEach(ev => b.addEventListener(ev, stop));
+  b.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+}
+stepBtn("ym", -1); stepBtn("yp", 1);
 
 /* ---------- Karte (nur Umrisse, keine Ortsnamen) ---------- */
 const map = L.map("map", { minZoom: 5, maxBounds: [[44, 2], [58, 19]] });
